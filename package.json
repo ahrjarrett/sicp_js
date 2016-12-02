@@ -1,0 +1,18 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "SICP problems rewritten in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "tdd": "mocha -w -R spec"
+  },
+  "author": "andrew jarrett",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "mocha": "^3.1.2",
+    "ramda": "^0.22.1",
+    "should": "^11.1.1"
+  }
+}
