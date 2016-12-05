@@ -1,6 +1,6 @@
 const R = require('ramda')
 
-describe.only("squares the largest 2 out of 3 args", () => {
+describe("squares the largest 2 out of 3 args", () => {
   const sqOfLargestTwo = (x, y, z) => {
     if((x <= y) && (x <= z)) return Math.pow(y, 2) + Math.pow(z, 2)
     else if((y <= x) && (y <= z)) return Math.pow(x, 2) + Math.pow(z, 2)
