@@ -16,7 +16,7 @@ const sqrtIter = (guess, x) => {
 
 const sqrt = (x) => sqrtIter(1.0, x)
 
-describe.only("square root", () => {
+describe("square root", () => {
   it("avg should calculate avg of 2 numbers", () => {
     avg(8, 4).should.eql(6)
     avg(-4, -8).should.eql(-6)
@@ -27,6 +27,10 @@ describe.only("square root", () => {
     abs(8).should.eql(8)
     abs(-4).should.eql(4)
     abs(0).should.eql(0)
+  })
+
+  it("sqrt should find square root", () => {
+    Math.floor(sqrt(9)).should.eql(3)
   })
 })
 
